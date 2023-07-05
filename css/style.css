@@ -1,0 +1,187 @@
+body{
+    box-sizing: content-box;
+    background-color: #E3E7EB;
+    margin: 0;
+}
+
+/* nav */
+.nav{
+    font-family: myfont2;
+    padding: 15px 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f3f3f3;
+}
+
+.nav .logo{
+    width: 10%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo img{
+    width: 60px;
+}
+
+.nav ul{
+    padding-left: 0;
+    /* background-color: red; */
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul a{
+    text-decoration: none;
+    color: rgb(16,23,39);
+}
+
+.tombol-kontak{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: green; */
+}
+
+.tombol-kontak a{
+    padding: 10px 15px;
+    background-color: rgb(16,23,39);
+    border-radius: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #eee;
+}
+/* end */
+
+/* container css */
+
+.container{
+    background-color: white;
+    margin: 140px 100px;
+    padding: 50px 50px;
+    box-shadow: 1px 1px 40px #c7c7c7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* end */
+
+/* info css */
+.info{
+    margin-top: 20px;
+    /* background-color: blue; */
+    width: 65%;
+}
+
+.info h2{
+    font: 25px myfont;
+}
+
+.info p{
+    text-align: justify;
+    font: 14px myfont2;
+}
+
+/* end */
+
+
+/* tombol */
+.tombol{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.tombol .dn{
+    margin-left: 20px;
+}
+
+.tombol .button{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font: 16px myfont2;
+    background-color: black;
+    padding: 5px;
+    border-radius: 50px;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.tombol .button:hover {
+    transform: scale(1.2);
+}
+
+/* end */
+
+
+/* table css */
+
+table{
+    margin: 50px 0 0 0;
+}
+
+td{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+td:hover{
+    transform: scale(1.5);
+}
+
+/* end */
+
+/* hero css */
+.hero{
+    box-shadow: 0 0 25px #ccc;
+    border-radius: 5px;
+    /* margin: 30px auto ; */
+    width: 29%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.hero img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* end */
+
+
+/* container css */
+
+.main{
+    text-align: center;
+    padding-bottom: 15px;
+    line-height: 0;
+}
+
+.main h3{
+    font-family: myfont;
+}
+
+.main p{
+    font-family: myfont2;
+    font-size: 10px;
+}
+
+/* end */
+
+

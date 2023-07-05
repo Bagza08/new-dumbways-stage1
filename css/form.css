@@ -1,0 +1,54 @@
+.input-data{
+    margin: 125px 0;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-data h2{
+    font-family: myfont;
+}
+
+.input-data form{
+    font-family: myfont2;
+    font-size: 20px;
+    width: 40%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.input-data form input, .input-data form select, .input-data form textarea{
+    box-shadow: 0 0 10px #cecece;
+    border-style: none;
+    font-family: myfont2;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-data form select{
+    background-color: white;
+}
+
+.input-data form .sub{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-data form .sub button{
+    background-color: rgb(16,23,39);
+    font-family: myfont2;
+    font-size: 18px;
+    padding: 2px 30px;
+    border-style: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
