@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/allproject.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="ini adalah logo" />
+        </a>
+      </div>
+      <ul>
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="myproject.html">
+          <li>My Project</li>
+        </a>
+      </ul>
+      <div class="tombol-kontak">
+        <a href="form.html">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="input-data">
+      <h2>ADD MY PROJECT</h2>
+      <form onsubmit="addProject(event)" action="" class="myproject">
+        <!-- project name -->
+        <label for="iproject">Project Name</label>
+        <input id="iproject" name="" type="text" />
+        <!-- start date -->
+        <div class="box-date">
+          <div class="awal">
+            <label for="sdate">Start Date</label>
+            <input id="sdate" name="" type="text" />
+          </div>
+          <div class="akhir">
+            <label for="edate">End Date</label>
+            <input id="edate" name="" type="text" />
+          </div>
+        </div>
+        <div></div>
+        <!-- description -->
+        <label for="desc">Description</label>
+        <textarea name="" id="desc" cols="4" rows="4"></textarea>
+        <!-- checkbox -->
+        <label for="">Technologies</label>
+        <div class="cb">
+          <label for="rejs">
+            <input type="checkbox" name="" id="rejs" />
+            <span>React JS</span>
+          </label>
+          <label for="nojs">
+            <input type="checkbox" name="" id="nojs" />
+            <span>Node JS</span>
+          </label>
+        </div>
+        <div class="cb">
+          <label for="bs">
+            <input type="checkbox" name="" id="bs" />
+            <span>Bootstrap</span>
+          </label>
+          <label for="lar">
+            <input type="checkbox" name="" id="lar" />
+            <span>Laravel</span>
+          </label>
+        </div>
+        <!-- upload image -->
+        <label class="uimg">Upload Image</label>
+        <div class="box-attfile">
+          <label for="title-attfile">
+            <span>Choose</span>
+            <img src="img/link-file.png" height="25px" alt="file" />
+          </label>
+          <input type="file" id="title-attfile" hidden />
+        </div>
+        <!-- tombol -->
+        <div class="sub">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- allproject -->
+    <div class="allproject">
+      <h2>MY PROJECT</h2>
+      <div id="cardcontainer" class="cardcontainer">
+        <!-- <div id="card" class="card">
+          <img src="img/manuk.jpg" alt="" />
+          <h4>Website Company Profile</h4>
+          <h5>durasi 3 bulan</h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            eaque cum, nostrum consequatur officiis labore corporis facilis
+          </p>
+          <div class="icheckbox">
+            <i class="fa-brands fa-react fa-2xl"></i>
+            <i class="fa-brands fa-node fa-2xl marlef"></i>
+            <i class="fa-brands fa-bootstrap fa-2xl marlef"></i>
+            <i class="fa-brands fa-laravel fa-2xl marlef"></i>
+          </div>
+          <div class="duatombol">
+            <a href="">Edit</a>
+            <a href="">Delete</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="js/myproject.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dffd08a31f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
