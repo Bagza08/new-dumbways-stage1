@@ -14,15 +14,17 @@
 
 .allproject .cardcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* background-color: white; */
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .allproject .cardcontainer .card {
   font-family: myfont2;
-  width: 31%;
+  width: 30%;
   background-color: white;
   display: flex;
   flex-direction: column;
