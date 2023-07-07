@@ -1,0 +1,87 @@
+.allproject {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8fbff;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.allproject h2 {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.allproject .cardcontainer {
+  display: flex;
+  justify-content: center;
+  /* background-color: white; */
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.allproject .cardcontainer .card {
+  font-family: myfont2;
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  box-shadow: 0 0 20px #e2e2e2;
+}
+
+.allproject .cardcontainer .card p {
+  text-align: justify;
+  /* background-color: blue; */
+}
+
+.allproject .cardcontainer .card h4 {
+  /* background-color: blue; */
+  margin-bottom: 0;
+}
+
+.allproject .cardcontainer .card h5 {
+  /* background-color: blue; */
+  color: #868686;
+  margin-top: 0;
+}
+
+.allproject .cardcontainer .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.allproject h2 {
+  font-family: myfont;
+}
+
+.duatombol {
+  margin-top: 10px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.duatombol a {
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(16, 23, 39);
+  width: 48%;
+}
+
+.icheckbox {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.icheckbox .marlef {
+  margin-left: 15px;
+}
