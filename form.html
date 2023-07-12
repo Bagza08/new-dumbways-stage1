@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="ini adalah logo" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myproject.html">My Project</a></li>
+      </ul>
+      <div class="tombol-kontak">
+        <a href="form.html">Contact Me</a>
+      </div>
+      <div class="tombol-hamburger-container">
+        <button
+          id="btn-hamburger"
+          class="btn-hamburger"
+          onclick="openHamburger()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="menu-hamburger" id="menu-hamburger">
+      <a href="index.html">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="form.html">Contact</a>
+    </div>
+
+    <!-- form -->
+    <div class="input-data">
+      <h2>GET IN TOUCH</h2>
+      <form action="">
+        <!-- name -->
+        <label for="name">Name</label>
+        <input id="input-name" name="name" type="text" />
+        <!-- email -->
+        <label for="email">Email</label>
+        <input id="input-email" name="email" type="text" />
+        <!-- no hp -->
+        <label for="phone">Phone Number</label>
+        <input id="input-phone" name="phone" type="text" />
+        <!-- subject -->
+        <label for="">Subject</label>
+        <select id="input-subject">
+          <option value=""></option>
+          <option value="Front End Developer">Front End Developer</option>
+          <option value="Back End Developer">Back End Developer</option>
+          <option value="Fullstack Developer">Fullstack Developer</option>
+        </select>
+        <!-- pesan -->
+        <label for="">Your Massage</label>
+        <textarea name="" id="input-message" cols="4" rows="4"></textarea>
+        <!-- tombol -->
+        <div class="sub">
+          <button type="submit" onclick="submitData(event)">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/form.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dffd08a31f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/hamburger-nav.js"></script>
+  </body>
+</html>
