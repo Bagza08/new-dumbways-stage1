@@ -1,0 +1,54 @@
+body {
+  background-color: #e3e7eb !important;
+}
+
+/* nav */
+nav {
+  background-color: #f3f3f3;
+}
+
+#btn-c {
+  background-color: rgb(16, 23, 39);
+  border: none;
+}
+
+#btn-b {
+  background-color: rgb(16, 23, 39);
+  border: none;
+}
+
+#act {
+  color: rgb(16, 23, 39);
+}
+
+.h3-testi {
+  margin-top: 100px;
+}
+
+.dsds-none {
+  display: none !important;
+}
+
+/* table css */
+
+table {
+  margin: 50px 0 0 0;
+  /* background-color: green; */
+}
+
+table tr td a img {
+  width: 35px;
+}
+
+td {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+td:hover {
+  transform: scale(1.5);
+}
+
+/* end */
