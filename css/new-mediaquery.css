@@ -1,0 +1,46 @@
+@media only screen and (max-width: 991px) {
+  li.dsds-none {
+    display: inline-block !important;
+  }
+
+  div.d-flex #btn-c {
+    display: none;
+  }
+
+  nav div#navbarSupportedContent.navbar-collapse.collapsing,
+  nav div#navbarSupportedContent.navbar-collapse.collapse.show {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav div#navbarSupportedContent.navbar-collapse.collapsing ul,
+  nav div#navbarSupportedContent.navbar-collapse.collapse.show ul {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav div#navbarSupportedContent.navbar-collapse.collapsing ul li,
+  nav div#navbarSupportedContent.navbar-collapse.collapse.show ul li {
+    width: 100%;
+  }
+
+  nav div#navbarSupportedContent.navbar-collapse.collapsing ul a,
+  nav div#navbarSupportedContent.navbar-collapse.collapse.show ul a {
+    /* background-color: red; */
+    box-sizing: border-box;
+    padding: 15px 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav div#navbarSupportedContent.navbar-collapse.collapse.show ul a:hover {
+    /* background-color: red; */
+    background-color: rgb(133, 132, 132);
+    color: white;
+  }
+}

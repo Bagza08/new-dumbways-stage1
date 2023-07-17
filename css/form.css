@@ -1,0 +1,142 @@
+.input-data {
+  margin: 125px 0;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-data h2 {
+  font-family: myfont;
+}
+
+.input-data form {
+  font-family: myfont2;
+  font-size: 20px;
+  width: 40%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-data form input,
+.input-data form select,
+.input-data form textarea {
+  box-shadow: 0 0 10px #cecece;
+  border-style: none;
+  font-family: myfont2;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.input-data form select {
+  background-color: white;
+}
+
+.input-data form .sub {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-data form .sub button {
+  background-color: rgb(16, 23, 39);
+  font-family: myfont2;
+  font-size: 18px;
+  padding: 2px 30px;
+  border-style: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* form myrpoject */
+
+/* .input-data .myproject{
+    background-color: rebeccapurple;
+} */
+
+.input-data .myproject .box-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-data .myproject .box-date .awal,
+.input-data .myproject .box-date .akhir {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+/* attfile */
+/* .input-data .myproject .uimg {
+  margin-top: 5px;
+  background-color: aqua;
+} */
+
+.input-data .myproject .box-attfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 0 10px #cecece;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-data .myproject .box-attfile label {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding-right: 15px;
+}
+
+.input-data .myproject .box-attfile label span {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 16px;
+  background-color: rgba(223, 221, 221, 0.5);
+  margin: 0;
+  width: 20%;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* checkbox */
+.input-data .myproject .cb {
+  /* background-color: red; */
+  /* margin-bottom: px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.input-data .myproject .cb label {
+  /* background-color: blue; */
+  width: 48%;
+  /* background-color: red; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  color: #727272;
+  font-size: 18px;
+}
+
+.input-data .myproject .cb label input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  /* box-shadow: 0 0 5px red; */
+}
