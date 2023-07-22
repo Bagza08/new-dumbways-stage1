@@ -1,0 +1,6 @@
+1- download go dan install 
+2- periksa di cmd dengan menggunkaan perintah (go) / cek versi menggunkaan (go version)
+3- setelah itu kita pindah ke cd yg kita buka 
+4- berikan perintah go init namaProjectkita_
+5- setelah itu tinggal membuta file main.go isi code go 
+6- runiing code di cmd dengan menggunakan perinta go run main.go
