@@ -1,0 +1,214 @@
+/* responsive breakpoint */
+
+/* ukuran tablet */
+
+@media only screen and (max-width: 1200px) {
+  /* nav */
+  .nav {
+    box-sizing: border-box;
+  }
+
+  .nav ul,
+  .tombol-kontak {
+    display: none;
+  }
+
+  /* end */
+
+  /* hamburger menu */
+  .tombol-hamburger-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    /* background-color: blue; */
+  }
+
+  .tombol-hamburger-container .btn-hamburger {
+    color: black;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 30px;
+  }
+
+  .tombol-hamburger-container .btn-hamburger:hover {
+    color: red;
+  }
+
+  .menu-hamburger {
+    top: 72px;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 50vh; */
+    width: 100%;
+    background-color: #747474;
+  }
+
+  .menu-hamburger a {
+    box-sizing: border-box;
+    font-family: myfont2;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 50px 0;
+    /* background-color: aqua; */
+    text-align: center;
+  }
+
+  .menu-hamburger a:hover {
+    background-color: orangered;
+  }
+  /* container */
+
+  .container {
+    margin: 100px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  table {
+    margin: 50px auto;
+  }
+
+  .hero {
+    margin-top: 30px;
+    width: 70%;
+  }
+
+  /* FORM CONTACT */
+  .input-data form {
+    width: 50%;
+  }
+
+  /* FORM MYPROJECT */
+  .input-data .myproject .cb {
+    width: 100%;
+  }
+
+  .input-data .myproject .cb label {
+    font-size: 18px;
+  }
+
+  .allproject .cardcontainer .card {
+    width: 40%;
+    /* padding: 0; */
+    flex-wrap: wrap;
+  }
+
+  .allproject {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tombol-hamburger-container,
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+/* end ukuran tablet*/
+
+/* ukuran mobile */
+
+@media only screen and (max-width: 576px) {
+  .nav {
+    box-sizing: border-box;
+    padding: 15px 30px;
+  }
+
+  .container {
+    margin: 90px 30px;
+    padding: 20px 35px 35px 35px;
+  }
+
+  .info {
+    margin-top: 0;
+  }
+
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 10px;
+  }
+
+  .tombol {
+    margin-top: 25px;
+  }
+
+  .tombol .dn {
+    margin-left: 10px;
+  }
+
+  .tombol .dn a img {
+    width: 70px;
+  }
+
+  .tombol .button {
+    font-size: 10px;
+    padding: 2px;
+    width: 70px;
+  }
+
+  table {
+    margin: 20px auto;
+  }
+
+  table tr td a img {
+    width: 25px;
+  }
+
+  td {
+    margin: 0 5px;
+  }
+
+  .main h3 {
+    font-size: 14px;
+  }
+
+  .hero {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  /* FORM CONTACT */
+  .input-data {
+    margin: 90px 0;
+  }
+
+  .input-data form {
+    width: 80%;
+  }
+
+  /* FORM MYPROJECT */
+  .input-data .myproject .cb {
+    width: 100%;
+  }
+
+  .input-data .myproject .cb label {
+    font-size: 18px;
+  }
+
+  .allproject .cardcontainer .card {
+    width: 100%;
+    /* padding: 0; */
+  }
+
+  .allproject {
+    padding: 50px;
+  }
+}
+
+/* end responsive breakpoint */
