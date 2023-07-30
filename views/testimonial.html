@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial</title>
+    <!-- <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" /> -->
+    <link rel="stylesheet" href="../assets/css/new-mediaquery.css" />
+    <link rel="stylesheet" href="../assets/css/new-style.css" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="icon" href="../assets/img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <!-- <div class="nav">
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo.png" alt="ini adalah logo" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/project">Add Project</a></li>
+        <li><a href="/project">Testimonial</a></li>
+      </ul>
+      <div class="tombol-kontak">
+        <a href="/contact">Contact Me</a>
+      </div>
+      <div class="tombol-hamburger-container">
+        <button
+          id="btn-hamburger"
+          class="btn-hamburger"
+          onclick="openHamburger()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="menu-hamburger" id="menu-hamburger">
+      <a href="/">Home</a>
+      <a href="/project">Add Project</a>
+      <a href="/contact">Contact</a>
+    </div> -->
+    <nav id="nav-nav" class="navbar fixed-top navbar-expand-lg p-3">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="../assets/img/logo.png" alt="logo" width="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 f-2">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/project">Add Project</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" id="act" href="/testimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li class="nav-item mx-2 dsds-none">
+              <a class="nav-link" href="/contact">Contact Me</a>
+            </li>
+          </ul>
+          <!-- kanan -->
+          <!-- <ul
+            class="navbar-nav mb-2 mb-lg-0 f-2 d-flex justify-content-end me-3"
+          >
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/form-register">Register</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/form-login">Login</a>
+            </li>
+          </ul> -->
+          <div class="d-flex" role="search">
+            <a href="/contact" class="btn btn-success" id="btn-c">
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- container -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 my-3">
+          <h3 class="f-1 h3-testi">My Testimonials</h3>
+          <h5 class="f-1 mt-2">Rating By Start</h5>
+          <div
+            class="col-8 offset-2 mt-4 mb-3 d-flex flex-row justify-content-center gap-3 flex-wrap align-items-center"
+          >
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="allTestimonial()"
+            >
+              ALL <i class="bi bi-star-fill"></i>
+            </button>
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="filterTestimonial(1)"
+            >
+              1 <i class="bi bi-star-fill"></i>
+            </button>
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="filterTestimonial(2)"
+            >
+              2 <i class="bi bi-star-fill"></i>
+            </button>
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="filterTestimonial(3)"
+            >
+              3 <i class="bi bi-star-fill"></i>
+            </button>
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="filterTestimonial(4)"
+            >
+              4 <i class="bi bi-star-fill"></i>
+            </button>
+            <button
+              class="btn btn-primary"
+              id="btn-b"
+              onclick="filterTestimonial(5)"
+            >
+              5 <i class="bi bi-star-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-12 d-flex flex-wrap justify-content-center mb-5"
+          id="testimonial"
+        >
+          <!-- <div class="card m-3 shadow" style="width: 18rem; object-fit: cover">
+            <img
+              src="img/manuk.jpg"
+              class="card-img-top object-fit-cover"
+              height="180rem"
+            />
+            <div class="card-body">
+              <p class="card-text text-start ">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex justify-content-end">
+                <h6 class="card-title text-start">- Card title</h6>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- link js -->
+    <script src="../assets/js/ajax.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://kit.fontawesome.com/dffd08a31f.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script src="js/hamburger-nav.js"></script> -->
+  </body>
+</html>
